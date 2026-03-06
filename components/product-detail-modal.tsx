@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { useEffect, useState } from "react"
 import { Plus, Check, Ruler, Layers, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -17,13 +18,25 @@ export function ProductDetailModal({
   onClose,
 }: ProductDetailModalProps) {
   const { addItem, isInCart } = useCart()
+  const [selectedImage, setSelectedImage] = useState("")
+
+  useEffect(() => {
+    if (product) {
+      const images = product.images?.length ? product.images : [product.image]
+      setSelectedImage(images[0])
+      return
+    }
+    setSelectedImage("")
+  }, [product])
 
   if (!product) return null
+
+  const productImages = product.images?.length ? product.images : [product.image]
 
   const inCart = isInCart(product.id)
 
   const whatsAppMessage = encodeURIComponent(
-    `Ola! Gostaria de saber mais sobre o produto: ${product.name}\n\nMaterial: ${product.material}\nDimensoes: ${product.dimensions}`
+    `Olá! Gostaria de saber mais sobre o produto: ${product.name}\nCódigo: ${product.code}\n\nMaterial: ${product.material}\nDimensões: ${product.dimensions}`
   )
 
   return (
@@ -51,7 +64,7 @@ export function ProductDetailModal({
         <div className="flex-1 overflow-y-auto">
           <div className="relative aspect-[4/3] w-full">
             <Image
-              src={product.image}
+              src={selectedImage || product.image}
               alt={product.name}
               fill
               className="object-cover"
@@ -59,10 +72,38 @@ export function ProductDetailModal({
             />
           </div>
 
+          {productImages.length > 1 ? (
+            <div className="grid grid-cols-5 gap-2 p-3 md:p-4">
+              {productImages.map((img, i) => (
+                <button
+                  key={img}
+                  onClick={() => setSelectedImage(img)}
+                  className={`relative aspect-square overflow-hidden rounded-md border ${
+                    selectedImage === img
+                      ? "border-primary"
+                      : "border-border hover:border-primary/40"
+                  }`}
+                  aria-label={`Ver foto ${i + 1} de ${product.name}`}
+                >
+                  <Image
+                    src={img}
+                    alt={`${product.name} - foto ${i + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </button>
+              ))}
+            </div>
+          ) : null}
+
           <div className="flex flex-col gap-6 p-4 md:p-6">
             <div className="flex flex-wrap items-center gap-2">
               <Badge variant="secondary" className="font-mono text-xs">
                 {product.category}
+              </Badge>
+              <Badge variant="outline" className="font-mono text-xs">
+                Cód: {product.code}
               </Badge>
               <Badge
                 variant="outline"
@@ -86,7 +127,7 @@ export function ProductDetailModal({
 
             <div>
               <h3 className="mb-3 font-mono text-sm font-semibold text-foreground">
-                Caracteristicas
+                Características
               </h3>
               <ul className="flex flex-col gap-2">
                 {product.details.map((detail, i) => (
@@ -115,7 +156,7 @@ export function ProductDetailModal({
             {inCart ? (
               <>
                 <Check className="mr-2 h-4 w-4" />
-                Ja esta no carrinho
+                Já está no carrinho
               </>
             ) : (
               <>

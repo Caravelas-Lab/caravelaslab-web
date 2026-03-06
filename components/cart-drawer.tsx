@@ -54,10 +54,10 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
               </svg>
             </div>
             <p className="text-sm text-muted-foreground">
-              Seu carrinho esta vazio.
+              Seu carrinho está vazio.
             </p>
             <p className="text-xs text-muted-foreground">
-              Adicione produtos do catalogo para enviar pelo WhatsApp.
+              Adicione produtos do catálogo para enviar pelo WhatsApp.
             </p>
           </div>
         ) : (
@@ -82,6 +82,9 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                       <h3 className="font-mono text-sm font-semibold text-foreground">
                         {item.product.name}
                       </h3>
+                      <p className="text-[11px] font-mono text-muted-foreground">
+                        Cód: {item.product.code}
+                      </p>
                       <p className="text-xs text-muted-foreground">
                         {item.product.material}
                       </p>

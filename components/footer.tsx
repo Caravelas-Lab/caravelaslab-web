@@ -28,7 +28,7 @@ export function Footer() {
               </div>
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Transformamos ideias em objetos reais atraves da impressao 3D de alta qualidade. Do prototipo a producao.
+              Transformamos ideias em objetos reais através da impressão 3D de alta qualidade. Do protótipo à produção.
             </p>
           </div>
 
@@ -47,21 +47,21 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                Sao Paulo, SP - Brasil
+                São Paulo, SP - Brasil
               </li>
             </ul>
           </div>
 
           <div className="flex flex-col gap-4">
             <h3 className="font-mono text-sm font-semibold uppercase tracking-wider text-foreground">
-              Horario de Atendimento
+              Horário de Atendimento
             </h3>
             <ul className="flex flex-col gap-3">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <div>
                   <p>Segunda a Sexta: 9h - 18h</p>
-                  <p>Sabado: 9h - 13h</p>
+                  <p>Sábado: 9h - 13h</p>
                 </div>
               </li>
             </ul>

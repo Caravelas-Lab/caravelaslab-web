@@ -14,8 +14,8 @@ interface HeaderProps {
 }
 
 const navItems = [
-  { id: "catalogo", label: "Catalogo" },
-  { id: "orcamento", label: "Orcamento" },
+  { id: "catalogo", label: "Catálogo" },
+  { id: "orcamento", label: "Orçamento" },
   { id: "sobre", label: "Sobre" },
   { id: "contato", label: "Contato" },
 ]
@@ -35,7 +35,7 @@ export function Header({ onCartOpen, activeSection, onNavigate }: HeaderProps) {
         <button
           onClick={() => onNavigate("hero")}
           className="flex items-center gap-3"
-          aria-label="Voltar ao inicio"
+          aria-label="Voltar ao início"
         >
           <div className="relative h-10 w-10 overflow-hidden rounded-lg">
             <Image
@@ -55,7 +55,7 @@ export function Header({ onCartOpen, activeSection, onNavigate }: HeaderProps) {
           </div>
         </button>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Navegacao principal">
+        <nav className="hidden items-center gap-1 md:flex" aria-label="Navegação principal">
           {navItems.map((item) => (
             <button
               key={item.id}

@@ -5,27 +5,27 @@ import { Layers, Cpu, Zap, Shield } from "lucide-react"
 const features = [
   {
     icon: Layers,
-    title: "Impressao Camada por Camada",
+    title: "Impressão Camada por Camada",
     description:
-      "Tecnologia FDM e SLA para diferentes niveis de detalhamento e resistencia, garantindo o melhor resultado para cada projeto.",
+      "Tecnologia FDM e SLA para diferentes níveis de detalhamento e resistência, garantindo o melhor resultado para cada projeto.",
   },
   {
     icon: Cpu,
-    title: "Precisao Digital",
+    title: "Precisão Digital",
     description:
-      "Resolucao de ate 0.05mm em impressao SLA, perfeita para pecas que exigem detalhes minuciosos e acabamento profissional.",
+      "Resolução de até 0.05mm em impressão SLA, perfeita para peças que exigem detalhes minuciosos e acabamento profissional.",
   },
   {
     icon: Zap,
-    title: "Producao Rapida",
+    title: "Produção Rápida",
     description:
-      "Prototipagem e producao em pequena escala com prazos curtos. Do modelo digital a peca finalizada em horas.",
+      "Prototipagem e produção em pequena escala com prazos curtos. Do modelo digital à peça finalizada em horas.",
   },
   {
     icon: Shield,
     title: "Materiais de Qualidade",
     description:
-      "Trabalhamos com PLA, ABS, PETG, Nylon, Resina UV e TPU. Cada material selecionado para atender necessidades especificas.",
+      "Trabalhamos com PLA, ABS, PETG, Nylon, Resina UV e TPU. Cada material selecionado para atender necessidades específicas.",
   },
 ]
 
@@ -38,11 +38,11 @@ export function AboutSection() {
             Por que nos escolher
           </span>
           <h2 className="mb-4 font-mono text-3xl font-bold text-foreground md:text-4xl">
-            <span className="text-balance">Tecnologia que da forma a imaginacao</span>
+            <span className="text-balance">Tecnologia que dá forma à imaginação</span>
           </h2>
           <p className="mx-auto max-w-lg text-pretty text-sm leading-relaxed text-muted-foreground md:text-base">
-            Combinamos equipamentos de ultima geracao com atendimento
-            personalizado para entregar pecas de alta qualidade.
+            Combinamos equipamentos de última geração com atendimento
+            personalizado para entregar peças de alta qualidade.
           </p>
         </div>
 

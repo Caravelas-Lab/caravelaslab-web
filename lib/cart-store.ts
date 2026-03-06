@@ -75,11 +75,12 @@ export function useCart() {
 
   const getWhatsAppMessage = useCallback(() => {
     if (items.length === 0) return ""
-    let message = "Ola! Gostaria de fazer um pedido dos seguintes produtos:\n\n"
+    let message = "Olá! Gostaria de fazer um pedido dos seguintes produtos:\n\n"
     items.forEach((item, index) => {
       message += `${index + 1}. ${item.product.name} (Qtd: ${item.quantity})\n`
+      message += `   Código: ${item.product.code}\n`
       message += `   Material: ${item.product.material}\n`
-      message += `   Dimensoes: ${item.product.dimensions}\n\n`
+      message += `   Dimensões: ${item.product.dimensions}\n\n`
     })
     message += "Poderia me informar o valor e prazo de entrega?"
     return encodeURIComponent(message)

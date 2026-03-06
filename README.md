@@ -1,16 +1,16 @@
 # Caravelas Lab Web
 
-Aplicacao web da **Caravelas Lab** para apresentacao de catalogo de produtos impressos em 3D e solicitacao de orcamento personalizado via WhatsApp.
+Aplicação web da **Caravelas Lab** para apresentação de catálogo de produtos impressos em 3D e solicitação de orçamento personalizado via WhatsApp.
 
 ## Sobre o projeto
 
-Este projeto foi construido com foco em:
+Este projeto foi construído com foco em:
 
-- exibicao de produtos por categoria
-- visualizacao de detalhes dos itens
-- fluxo de carrinho para selecao de produtos
-- formulario de orcamento personalizado
-- contato rapido via WhatsApp
+- exibição de produtos por categoria
+- visualização de detalhes dos itens
+- fluxo de carrinho para seleção de produtos
+- formulário de orçamento personalizado
+- contato rápido via WhatsApp
 
 ## Stack
 
@@ -24,7 +24,7 @@ Este projeto foi construido com foco em:
 ## Requisitos
 
 - Node.js **>= 20.9.0**
-- pnpm (recomendado: versao atual, ex: 10.x)
+- pnpm (recomendado: versão atual, ex: 10.x)
 
 ## Como rodar o projeto
 
@@ -34,7 +34,7 @@ Este projeto foi construido com foco em:
 cd /home/caju-03/Documentos/3D/SISTEMA/web
 ```
 
-2. Configure a versao correta do Node (com nvm):
+2. Configure a versão correta do Node (com nvm):
 
 ```bash
 nvm install 20
@@ -48,7 +48,7 @@ corepack enable
 corepack prepare pnpm@10 --activate
 ```
 
-4. Instale as dependencias:
+4. Instale as dependências:
 
 ```bash
 pnpm install
@@ -66,30 +66,30 @@ pnpm dev
 http://localhost:3000
 ```
 
-## Scripts disponiveis
+## Scripts disponíveis
 
 ```bash
 pnpm dev     # ambiente de desenvolvimento
-pnpm build   # build de producao
-pnpm start   # inicia build de producao
-pnpm lint    # analise de lint
+pnpm build   # build de produção
+pnpm start   # inicia build de produção
+pnpm lint    # análise de lint
 ```
 
 ## Estrutura principal
 
 ```text
 app/          # rotas e layout principal
-components/   # secoes da interface e componentes UI
-lib/          # dados de produtos, utilitarios e estado
-public/       # imagens e arquivos estaticos
+components/   # seções da interface e componentes UI
+lib/          # dados de produtos, utilitários e estado
+public/       # imagens e arquivos estáticos
 styles/       # estilos complementares
 ```
 
-## Observacoes
+## Observações
 
 - O projeto usa placeholder de contato (telefone/WhatsApp) em alguns pontos.
-- Ajuste os dados da empresa antes de publicar em producao.
+- Ajuste os dados da empresa antes de publicar em produção.
 
-## Licenca
+## Licença
 
 Uso interno da Caravelas Lab.
