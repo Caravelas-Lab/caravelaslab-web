@@ -32,11 +32,11 @@ export function CatalogSection({ onViewDetails }: CatalogSectionProps) {
             Nossos Produtos
           </span>
           <h2 className="mb-4 font-mono text-3xl font-bold text-foreground md:text-4xl">
-            <span className="text-balance">Catalogo de Impressao 3D</span>
+            <span className="text-balance">Catálogo de Impressão 3D</span>
           </h2>
           <p className="mx-auto max-w-lg text-pretty text-sm leading-relaxed text-muted-foreground md:text-base">
-            Explore nossa colecao de produtos impressos em 3D. Cada peca e
-            fabricada com precisao e materiais de alta qualidade.
+            Explore nossa coleção de produtos impressos em 3D. Cada peça é
+            fabricada com precisão e materiais de alta qualidade.
           </p>
         </div>
 

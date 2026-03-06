@@ -15,13 +15,13 @@ import {
 } from "@/components/ui/select"
 
 const materials = [
-  "PLA (Biodegradavel)",
-  "ABS (Alta Resistencia)",
-  "PETG (Flexivel e Resistente)",
-  "Resina UV (Alta Definicao)",
+  "PLA (Biodegradável)",
+  "ABS (Alta Resistência)",
+  "PETG (Flexível e Resistente)",
+  "Resina UV (Alta Definição)",
   "Nylon (Industrial)",
-  "TPU (Flexivel/Borracha)",
-  "Nao tenho certeza",
+  "TPU (Flexível/Borracha)",
+  "Não tenho certeza",
 ]
 
 const finishes = [
@@ -50,7 +50,7 @@ export function QuoteSection() {
     e.preventDefault()
     setSending(true)
 
-    const message = `Ola! Gostaria de solicitar um orcamento personalizado:\n\n` +
+    const message = `Olá! Gostaria de solicitar um orçamento personalizado:\n\n` +
       `Nome: ${formData.name}\n` +
       `Email: ${formData.email}\n` +
       `Telefone: ${formData.phone}\n` +
@@ -58,8 +58,8 @@ export function QuoteSection() {
       `Material desejado: ${formData.material}\n` +
       `Acabamento: ${formData.finish}\n` +
       `Quantidade: ${formData.quantity}\n` +
-      `Descricao: ${formData.description}\n` +
-      `Possui arquivo 3D: ${formData.hasFile ? "Sim" : "Nao"}`
+      `Descrição: ${formData.description}\n` +
+      `Possui arquivo 3D: ${formData.hasFile ? "Sim" : "Não"}`
 
     const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`
 
@@ -77,11 +77,11 @@ export function QuoteSection() {
             Sob Medida
           </span>
           <h2 className="mb-4 font-mono text-3xl font-bold text-foreground md:text-4xl">
-            <span className="text-balance">Orcamento Personalizado</span>
+            <span className="text-balance">Orçamento Personalizado</span>
           </h2>
           <p className="mx-auto max-w-lg text-pretty text-sm leading-relaxed text-muted-foreground md:text-base">
-            Tem um projeto unico em mente? Preencha o formulario abaixo com os
-            detalhes e enviaremos seu orcamento pelo WhatsApp.
+            Tem um projeto único em mente? Preencha o formulário abaixo com os
+            detalhes e enviaremos seu orçamento pelo WhatsApp.
           </p>
         </div>
 
@@ -147,7 +147,7 @@ export function QuoteSection() {
             <Label htmlFor="projectType">Tipo de projeto</Label>
             <Input
               id="projectType"
-              placeholder="Ex: Prototipo, peca decorativa, peca funcional..."
+              placeholder="Ex: Protótipo, peça decorativa, peça funcional..."
               value={formData.projectType}
               onChange={(e) =>
                 setFormData({ ...formData, projectType: e.target.value })
@@ -202,7 +202,7 @@ export function QuoteSection() {
             <Label htmlFor="description">Descreva seu projeto</Label>
             <Textarea
               id="description"
-              placeholder="Conte-nos sobre o que voce precisa: dimensoes aproximadas, funcionalidade, referencia visual, prazo desejado..."
+              placeholder="Conte-nos sobre o que você precisa: dimensões aproximadas, funcionalidade, referência visual, prazo desejado..."
               rows={5}
               required
               value={formData.description}
@@ -223,7 +223,7 @@ export function QuoteSection() {
               }
             />
             <Label htmlFor="hasFile" className="text-sm font-normal">
-              Ja possuo arquivo 3D (STL, OBJ, 3MF, etc.)
+              Já possuo arquivo 3D (STL, OBJ, 3MF, etc.)
             </Label>
           </div>
 
@@ -241,7 +241,7 @@ export function QuoteSection() {
             ) : (
               <>
                 <Send className="mr-2 h-4 w-4" />
-                Enviar orcamento pelo WhatsApp
+                Enviar orçamento pelo WhatsApp
               </>
             )}
           </Button>

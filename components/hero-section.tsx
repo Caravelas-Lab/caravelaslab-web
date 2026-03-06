@@ -14,7 +14,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-3d.jpg"
-          alt="Impressora 3D em acao"
+          alt="Impressora 3D em ação"
           fill
           className="object-cover opacity-30"
           priority
@@ -34,7 +34,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <div className="mb-6 inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5">
           <span className="text-xs font-medium uppercase tracking-wider text-primary">
-            Impressao 3D de Alta Qualidade
+            Impressão 3D de Alta Qualidade
           </span>
         </div>
         <h1 className="mb-6 font-mono text-4xl font-bold leading-tight text-foreground md:text-6xl lg:text-7xl">
@@ -44,8 +44,8 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           </span>
         </h1>
         <p className="mx-auto mb-10 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-          Explore nosso catalogo de produtos impressos em 3D. Escolha seus
-          favoritos e faca seu pedido diretamente pelo WhatsApp.
+          Explore nosso catálogo de produtos impressos em 3D. Escolha seus
+          favoritos e faça seu pedido diretamente pelo WhatsApp.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button
@@ -53,7 +53,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             className="w-full px-8 text-base font-semibold sm:w-auto"
             onClick={() => onNavigate("catalogo")}
           >
-            Ver Catalogo
+            Ver Catálogo
           </Button>
           <Button
             variant="outline"
@@ -61,7 +61,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             className="w-full px-8 text-base sm:w-auto"
             onClick={() => onNavigate("orcamento")}
           >
-            Orcamento Personalizado
+            Orçamento Personalizado
           </Button>
         </div>
       </div>
@@ -69,7 +69,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
       <button
         onClick={() => onNavigate("catalogo")}
         className="absolute bottom-8 z-10 animate-bounce text-muted-foreground transition-colors hover:text-primary"
-        aria-label="Rolar para o catalogo"
+        aria-label="Rolar para o catálogo"
       >
         <ArrowDown className="h-6 w-6" />
       </button>

@@ -44,6 +44,9 @@ export function ProductCard({ product, onViewDetails }: ProductCardProps) {
         <h3 className="font-mono text-sm font-semibold leading-snug text-foreground md:text-base">
           {product.name}
         </h3>
+        <p className="text-[11px] font-mono text-muted-foreground">
+          Cód: {product.code}
+        </p>
         <p className="line-clamp-2 text-xs leading-relaxed text-muted-foreground">
           {product.description}
         </p>

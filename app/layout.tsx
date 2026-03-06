@@ -14,24 +14,11 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Caravelas Lab | Catalogo de Produtos',
-  description: 'Catalogo de produtos para impressao 3D. Escolha seus produtos e faca seu pedido pelo WhatsApp.',
+  title: 'Caravelas Lab | Catálogo de Produtos',
+  description: 'Catálogo de produtos para impressão 3D. Escolha seus produtos e faça seu pedido pelo WhatsApp.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/images/logo.jpg',
+    apple: '/images/logo.jpg',
   },
 }
 
