@@ -16,7 +16,7 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
 
   if (!open) return null
 
-  const whatsappUrl = `https://wa.me/5511999999999?text=${getWhatsAppMessage()}`
+  const whatsappUrl = `https://wa.me/5586999665134?text=${getWhatsAppMessage()}`
 
   return (
     <div className="fixed inset-0 z-[60] flex justify-end">
