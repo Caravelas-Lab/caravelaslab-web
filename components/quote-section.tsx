@@ -61,7 +61,7 @@ export function QuoteSection() {
       `Descrição: ${formData.description}\n` +
       `Possui arquivo 3D: ${formData.hasFile ? "Sim" : "Não"}`
 
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/5586999665134?text=${encodeURIComponent(message)}`
 
     setTimeout(() => {
       window.open(whatsappUrl, "_blank")
@@ -122,7 +122,7 @@ export function QuoteSection() {
               <Label htmlFor="phone">Telefone / WhatsApp</Label>
               <Input
                 id="phone"
-                placeholder="(11) 99999-9999"
+                placeholder="(86) 99966-5134"
                 required
                 value={formData.phone}
                 onChange={(e) =>

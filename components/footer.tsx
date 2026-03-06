@@ -39,15 +39,15 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                (11) 99999-9999
+                (86) 99966-5134
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                contato@caravelaslab.com.br
+                antonio.moreira.prog@gmail.com
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                São Paulo, SP - Brasil
+                Parnaíba, PI - Brasil
               </li>
             </ul>
           </div>
@@ -66,7 +66,7 @@ export function Footer() {
               </li>
             </ul>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5586999665134"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
