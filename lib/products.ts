@@ -11,7 +11,7 @@ export interface Product {
   images: string[]
 }
 
-export const categories = ["Todos", "Chaveiros"] as const
+export const categories = ["Todos", "Chaveiros", "Lembrancinhas"] as const
 
 export type Category = (typeof categories)[number]
 
@@ -63,6 +63,27 @@ export const products: Product[] = [
       "/images/products/chaveiros/la%C3%A7os/image_b003c2dc-ee2a-4c62-83f3-32e9ca4821a6.png",
       "/images/products/chaveiros/la%C3%A7os/image_ceda5cfb-b71f-4270-8090-ceaab164b030.png",
       "/images/products/chaveiros/la%C3%A7os/ChatGPT%20Image%206%20de%20mar.%20de%202026%2C%2011_45_48.png",
+    ],
+  },
+  {
+    id: "lembrancinha-flores",
+    code: "3D-LEM-FLO-003",
+    name: "Lembrancinha Rosa Personalizada",
+    category: "Lembrancinhas",
+    description:
+      "Lembrancinha em formato de rosa com base personalizada, ideal para aniversários, bodas e eventos especiais com um toque delicado e exclusivo.",
+    details: [
+      "Flor 3D com acabamento fino e visual elegante",
+      "Base com personalização de nomes, idade ou data",
+      "Excelente para mesas, lembranças de festa e brindes",
+      "Produção em cores variadas sob consulta",
+    ],
+    material: "PLA Premium",
+    dimensions: "Aproximadamente 10cm x 4cm",
+    image:
+      "/images/products/lembrancinhas/flores/WhatsApp%20Image%202026-03-06%20at%2016.58.30.jpeg",
+    images: [
+      "/images/products/lembrancinhas/flores/WhatsApp%20Image%202026-03-06%20at%2016.58.30.jpeg",
     ],
   },
 ]
