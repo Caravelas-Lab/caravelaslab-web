@@ -16,11 +16,13 @@ export function CatalogSection({ onViewDetails }: CatalogSectionProps) {
   const [searchQuery, setSearchQuery] = useState("")
 
   const filteredProducts = products.filter((product) => {
+    const normalizedQuery = searchQuery.toLowerCase()
     const matchesCategory =
       activeCategory === "Todos" || product.category === activeCategory
     const matchesSearch =
-      product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.description.toLowerCase().includes(searchQuery.toLowerCase())
+      product.name.toLowerCase().includes(normalizedQuery) ||
+      product.description.toLowerCase().includes(normalizedQuery) ||
+      product.tags.some((tag) => tag.toLowerCase().includes(normalizedQuery))
     return matchesCategory && matchesSearch
   })
 
