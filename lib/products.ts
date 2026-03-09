@@ -11,7 +11,12 @@ export interface Product {
   images: string[]
 }
 
-export const categories = ["Todos", "Chaveiros", "Lembrancinhas"] as const
+export const categories = [
+  "Todos",
+  "Chaveiros",
+  "Lembrancinhas",
+  "Luminárias",
+] 
 
 export type Category = (typeof categories)[number]
 
@@ -86,4 +91,27 @@ export const products: Product[] = [
       "/images/products/lembrancinhas/flores/WhatsApp%20Image%202026-03-06%20at%2016.58.30.jpeg",
     ],
   },
+  {
+    id: "luminaria-coelho-led",
+    code: "3D-LUM-COE-004",
+    name: "Luminária Coelho LED",
+    category: "Luminárias",
+    description:
+      "Luminária decorativa em formato de coelho com LED interno, ideal para criar um ambiente aconchegante em quartos, salas e espaços infantis.",
+    details: [
+      "Design de coelho vazado com efeito de luz marcante",
+      "Iluminação interna com LED",
+      "Peça decorativa para quartos, mesas e nichos",
+      "Disponível em diferentes cores sob consulta",
+    ],
+    material: "PLA Premium",
+    dimensions: "Aproximadamente 15cm x 10cm",
+    image:
+      "/images/products/luminarias/ChatGPT%20Image%209%20de%20mar.%20de%202026%2C%2015_19_14.png",
+    images: [
+      "/images/products/luminarias/ChatGPT%20Image%209%20de%20mar.%20de%202026%2C%2015_19_14.png",
+      "/images/products/luminarias/ChatGPT%20Image%209%20de%20mar.%20de%202026%2C%2015_20_47.png",
+    ],
+  },
+
 ]
