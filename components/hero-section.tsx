@@ -13,7 +13,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
     <section className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden px-4 py-20">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-3d.jpg"
+          src="/images/hero-3d.png"
           alt="Impressora 3D em ação"
           fill
           className="object-cover opacity-30"
