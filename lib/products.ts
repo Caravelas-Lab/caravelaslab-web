@@ -16,7 +16,7 @@ export const categories = [
   "Chaveiros",
   "Lembrancinhas",
   "Luminárias",
-] as const
+] 
 
 export type Category = (typeof categories)[number]
 
@@ -113,4 +113,5 @@ export const products: Product[] = [
       "/images/products/luminarias/ChatGPT%20Image%209%20de%20mar.%20de%202026%2C%2015_20_47.png",
     ],
   },
+
 ]

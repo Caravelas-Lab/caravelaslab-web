@@ -167,7 +167,7 @@ export function ProductDetailModal({
           </Button>
           <Button variant="outline" className="flex-1" asChild>
             <a
-              href={`https://wa.me/5511999999999?text=${whatsAppMessage}`}
+              href={`https://wa.me/5586999665134?text=${whatsAppMessage}`}
               target="_blank"
               rel="noopener noreferrer"
             >
